@@ -15,11 +15,43 @@
     <div class="question-container">
       <div class="question-item">
         <div class="question-label">Question 1: if you click the square below the text changes 'x' to 'o' or vice versa </div>
-        <div id="a-1"></div>
-      </div>
-      <div class="question-item">
+        <!-- Question1 ) (part 1) create a new 'div' Element and append it as a child of the element that 
+        has the 'id = a-1' (the element is in index.html file) -->
+        <div id="a-1">
+           
+           <!-- (part2) Making the square an onclick function -->
+          <div onclick="myFunction()" class ="square">
+            
+             <h2>O</h2> <!-- defining a 'O' char to the innerHtml so I can check and change it in the Js file -->
+            
+          </div>
+
+          </div>
+        </div>
+        <div class="question-item">
+
+
         <div class="question-label">Question 2: select any item on the list below and click the remove button to eliminate the item</div>
-        <div id="a-2"></div>
+        <div id="a-2">
+           
+
+<select id = "selectNow">
+     <!-- <option>red</option>
+     <option>white</option>
+     <option>black</option>
+     <option>green</option>
+     <option>orange</option> -->
+  </select>
+  <input type = "button" onclick = "remove()" value = "Click to Remove">
+
+
+            
+               
+
+          
+          
+
+        </div>
       </div>
       <div class="question-item">
         <div class="question-label">Question 3: insert the radius of a sphere and press the calculate button to see the results</div>
@@ -34,7 +66,16 @@
       </div>
       <div class="question-item">
         <div class="question-label">Question 4: press any of those buttons to hide or display the respective question</div>
-        <div id="a-4"></div>
+        <div id="a-4">
+          <!-- create 3 buttons to hide or display each question -->
+          <div class="button-group">
+            <button id= "button1">Hide question 1</button>
+            <button id ="button2">Hide question 2</button>
+            <button id="button3">Hide question 3</button>
+          </div>
+
+
+        </div>
       </div>
     </div>
   </div>
